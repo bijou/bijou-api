@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Ignore auto-generated sphinx files
+docs/*.auto.rst

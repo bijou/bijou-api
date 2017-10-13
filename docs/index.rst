@@ -10,8 +10,6 @@ Welcome to bijou-api's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-.. automodule:: bijou
-
 Indices and tables
 ==================
 
