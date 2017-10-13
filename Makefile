@@ -1,6 +1,7 @@
 PYTHON ?= /usr/bin/env python3
 
 clean:
+	$(MAKE) -C docs clean
 	rm -rf build *.egg-info dist site
 
 build:
