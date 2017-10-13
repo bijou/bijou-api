@@ -9,6 +9,9 @@ build:
 install:
 	$(PYTHON) setup.py install
 
+docs:
+	$(MAKE) -C docs html
+
 default: build
 
 .PHONY: clean build install docs
