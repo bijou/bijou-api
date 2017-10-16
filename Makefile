@@ -1,12 +1,12 @@
 PYTHON ?= /usr/bin/env python3
 DOCS ?= html
 
+build:
+	$(PYTHON) setup.py build
+
 clean:
 	$(MAKE) -C docs clean
 	rm -rf build *.egg-info dist site htmlcov docs/*.auto.rst
-
-build:
-	$(PYTHON) setup.py build
 
 test:
 	$(PYTHON) -m tox
@@ -20,4 +20,4 @@ docs:
 
 default: build
 
-.PHONY: clean build test install docs
+.PHONY: build clean test install docs
