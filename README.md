@@ -1,5 +1,6 @@
 # BIJOU-API
 [![Maintainability](https://api.codeclimate.com/v1/badges/8e9cc1425ceb0d97ca2d/maintainability)](https://codeclimate.com/github/bijou/bijou-api/maintainability)
+[![Requirements Status](https://requires.io/github/bijou/bijou-api/requirements.svg?branch=master)](https://requires.io/github/bijou/bijou-api/requirements/?branch=master)
 
 This is the *core* of any bijou system, it provides a GraphQL based API to
 access the content and status of the server.
@@ -28,6 +29,10 @@ currently downloading.
 
 ## Source
 > Python 3.6 is required - no earlier versions will work!
+
+### Building
+There is a simple Makefile that abstracts the longer calls directly to python
+away in tasks.
 
 ## Distributions
 No requirements other than a computer capable of running the application. The
