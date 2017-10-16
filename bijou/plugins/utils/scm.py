@@ -16,8 +16,8 @@ class SCM:
         git: Path to git binary
     """
 
-    def __init__(self, root:str='plugins', git:str='git'):
+    def __init__(self, root: str = 'plugins', git: str = 'git'):
         self.git = git
 
-    def parse(self, desc:str) -> RepoDesc:
+    def parse(self, desc: str) -> RepoDesc:
         pass
