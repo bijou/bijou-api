@@ -1,12 +1,12 @@
 # BIJOU-API
+[![Maintainability](https://api.codeclimate.com/v1/badges/8e9cc1425ceb0d97ca2d/maintainability)](https://codeclimate.com/github/bijou/bijou-api/maintainability)
+
 This is the *core* of any bijou system, it provides a GraphQL based API to
 access the content and status of the server.
 
-<aside class="notice">
-This software, as well as the developer(s) working on it, does not encourage or
-directly provide the means to "pirate" or otherwise acquire the content it
-organises through illegal means.
-</aside>
+> This software, as well as the developer(s) working on it, does not encourage
+> or directly provide the means to "pirate" or otherwise acquire the content it
+> organises through illegal means.
 
 ## Categories
 Bijou makes very few assumptions about your media on its own and only provides
@@ -27,9 +27,7 @@ currently downloading.
 ## Requirements
 
 ## Source
-<aside class="warning">
-Python 3.6 is required - no earlier versions will work!
-</aside>
+> Python 3.6 is required - no earlier versions will work!
 
 ## Distributions
 No requirements other than a computer capable of running the application. The
