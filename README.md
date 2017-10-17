@@ -1,6 +1,6 @@
-# BIJOU-API
-[![Maintainability](https://api.codeclimate.com/v1/badges/8e9cc1425ceb0d97ca2d/maintainability)](https://codeclimate.com/github/bijou/bijou-api/maintainability)
-[![Requirements Status](https://requires.io/github/bijou/bijou-api/requirements.svg?branch=master)](https://requires.io/github/bijou/bijou-api/requirements/?branch=master)
+# BIJOU-SERVER
+[![Maintainability](https://api.codeclimate.com/v1/badges/f67d1d9948216b3b25aa/maintainability)](https://codeclimate.com/github/bijou/bijou-server/maintainability)
+[![Requirements Status](https://requires.io/github/bijou/bijou-server/requirements.svg?branch=master)](https://requires.io/github/bijou/bijou-server/requirements/?branch=master)
 
 This is the *core* of any bijou system, it provides a GraphQL based API to
 access the content and status of the server.
