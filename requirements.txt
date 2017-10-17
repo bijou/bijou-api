@@ -1,3 +1,4 @@
 graphene>=2.0dev
 Sphinx==1.6.4
 Twisted==17.9.0
+Yapsy==1.11.223
