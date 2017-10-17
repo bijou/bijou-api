@@ -9,12 +9,35 @@ access the content and status of the server.
 > or directly provide the means to "pirate" or otherwise acquire the content it
 > organises through illegal means.
 
-## Categories
+## Types
 Bijou makes very few assumptions about your media on its own and only provides
-some basic "categories" to define what type of media it thinks it is managing.
+some basic "types" to describe the media objects that it manages.
 The actual heavy lifting is done by the plugins that are outlined below.
 
+### Movie
+For your cinematic experiences, the "movie" type is used to define a media
+object that has a **title** and a **year** as the bare minimum amount of
+metadata.
+
+### Television
+The silver screen is organised first with a _show_ which requires, at a
+minimum, a **title** and a **year**.
+
+The invidiual episodes belonging to a _show_ require either a **season number**
+or to be marked as _special_ along with the **episode number** and an optional
+**title**
+
+### Anime
+
+### Standup
+
 ## Plugins
+
+### Layouts
+These plugins describe the way that your files are laid out and organised.
+The ones supplied by bijou are recommended however any configuration is
+possible - the bijou layouts mimic the filesystem found in other similar
+applications such as Radarr and Sonarr.
 
 ### Indexers
 Indexers are your sources of media content that provide metadata in a format
@@ -24,6 +47,9 @@ that downloaders understand.
 Downloaders accept metadata about a particular entry provided by an indexer
 plugin. Downloaders will also provide reports about the entries they are
 currently downloading.
+
+### Informants
+Informants are used to gather metadata about the "types" specified above.
 
 ## Requirements
 
