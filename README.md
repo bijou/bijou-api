@@ -1,4 +1,5 @@
 # BIJOU-SERVER
+[![Build Status](https://travis-ci.org/bijou/bijou-server.svg?branch=master)](https://travis-ci.org/bijou/bijou-server)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f67d1d9948216b3b25aa/maintainability)](https://codeclimate.com/github/bijou/bijou-server/maintainability)
 [![Requirements Status](https://requires.io/github/bijou/bijou-server/requirements.svg?branch=master)](https://requires.io/github/bijou/bijou-server/requirements/?branch=master)
 
