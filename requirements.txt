@@ -1,6 +1,8 @@
-tox>=2.9
+tox==2.9.1
 graphene>=2.0dev
+PyYAML==3.12
 Sphinx==1.6.4
 Twisted==17.9.0
 Yapsy==1.11.223
 SqlAlchemy==1.2.0b3
+pydash==4.2.1
