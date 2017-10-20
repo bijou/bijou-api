@@ -2,10 +2,16 @@ import os
 import argparse
 import yaml
 import warnings
+import logging
+import coloredlogs
+import verboselogs
 from pydash import _
+from schema import Schema, SchemaError, And, Use, Optional
 
 from . import errors
 
+# Create a logger for this script
+logger = logging.getLogger(__name__)
 
 def read_config(config_file: str) -> yaml.YAMLObject:
     """
@@ -56,9 +62,36 @@ def init_config(default_file: str = 'bijou.yml', opt_file: str = None) -> dict:
         if os.path.isfile(default_file):
             _.merge(config, read_config(default_file))
         else:
-            warnings.warn(errors.ConfigFileNotFoundWarning(default_file))
+            logger.warning(errors.ConfigFileNotFoundWarning(default_file))
 
     return config
+
+
+def validate_config(cfg: dict) -> bool:
+    """
+    Validate a configuration object against the configuration schema that
+    bijou-server expects.
+
+    Args:
+        cfg: Potentially valid configuration object
+    """
+    try:
+        schema = Schema({
+            Optional('log'): {
+                'level': And(str, len),
+                Optional('file'): And(str, len),
+                Optional('format'): And(str, len)
+            },
+            'db': {
+                'url': And(str, len)
+            },
+            'plugins': [And(str, len)]
+        })
+        schema.validate(cfg)
+        return True
+    except SchemaError as exc:
+        logger.error(exc)
+        return False
 
 
 def main():
@@ -70,12 +103,22 @@ def main():
     parser.add_argument('--log-level', help='logging level')
     args = parser.parse_args()
 
+    # Create and configure a logger - automatically set it for warnings
+    # and errors only (which can be thrown by the config process)
+    coloredlogs.install(level='WARNING')
+
     # Initialise the config with the file optionally passed in from
     # command line or try to use the default file
     config = init_config(default_file='bijou.yml', opt_file=args.config)
 
-    print(args)
-    print(config)
+    # Set the logging to what is in the config file
+    coloredlogs.install(level='DEBUG')
+
+    validate_config(config)
+
+    # Debug out for the arguments and configuration
+    logger.debug(args)
+    logger.debug(config)
 
 # If run as script also execute main function
 if __name__ == "__main__":
