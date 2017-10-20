@@ -11,7 +11,7 @@ setup(
     packages=find_packages(exclude=['docs', 'tests']),
     entry_points={
         'console_scripts': [
-            'bijou-server=bijou:main'
+            'bijou-server=bijou.__main__:main'
         ]
     }
 )

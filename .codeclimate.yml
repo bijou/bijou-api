@@ -1,11 +1,35 @@
 engines:
     pep8:
         enabled: true
+    markdownlint:
+        enabled: true
+    duplication:
+        enabled: true
+        config:
+            languages:
+                python:
+                    python_version: 3
+    fixme:
+        enabled: true
+
+
+checks:
+    method-lines:
+        config:
+            threshold: 100
+    method-complexity:
+        config:
+            threshold: 10
 
 ratings:
     paths:
         - "**.py"
+        - "**.md"
 
 exclude_paths:
+    - "tox.ini"
+    - "requirements.txt"
+    - "Makefile"
+    - "LICENSE"
     - "docs/"
     - "bijou/**/tests/**/*"
