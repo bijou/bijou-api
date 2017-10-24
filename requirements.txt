@@ -8,3 +8,4 @@ SqlAlchemy==1.2.0b3
 pydash==4.2.1
 coloredlogs==7.3
 schema==0.6.6
+guessit==2.1.4
