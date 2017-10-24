@@ -1,5 +1,6 @@
 # BIJOU-SERVER
 [![Build Status](https://travis-ci.org/bijou/bijou-server.svg?branch=master)](https://travis-ci.org/bijou/bijou-server)
+[![Build status](https://ci.appveyor.com/api/projects/status/07k5kbumvbhiot4k?svg=true)](https://ci.appveyor.com/project/murt/bijou-server)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f67d1d9948216b3b25aa/maintainability)](https://codeclimate.com/github/bijou/bijou-server/maintainability)
 [![Requirements Status](https://requires.io/github/bijou/bijou-server/requirements.svg?branch=master)](https://requires.io/github/bijou/bijou-server/requirements/?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/bijou/bijou-server/badge.svg?branch=master)](https://coveralls.io/github/bijou/bijou-server?branch=master)
