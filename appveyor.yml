@@ -1,14 +1,14 @@
 environment:
     matrix:
-        - PYTHON: "C:\\Python36"
-        - PYTHON: "C:\\Python36-x64"
+        - PYTHON: 'C:\\Python36'
+        - PYTHON: 'C:\\Python36-x64'
 
 install:
-    - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
-    - "pip install --disable-pip-version-check -r requirements.txt"
+    - 'SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%'
+    - 'pip install --disable-pip-version-check -r requirements.txt'
 
 build_script:
-    - "python setup.py build"
+    - 'python setup.py build'
 
 test_script:
-    - "python -m tox"
+    - '%PYTHON_HOME%\Scripts\tox'
