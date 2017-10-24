@@ -6,7 +6,7 @@ build:
 
 clean:
 	$(MAKE) -C docs clean
-	rm -rf build *.egg-info dist site htmlcov docs/*.auto.rst
+	rm -rf build *.egg-info dist site htmlcov docs/*.auto.rst .tox ./**/*/__pycache__
 
 test:
 	$(PYTHON) -m tox

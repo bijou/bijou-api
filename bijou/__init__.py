@@ -1,5 +1,1 @@
-"""bijou-server (bijou)"""
-
-from . import errors
-from . import net
-from . import plugins
+__import__('pkg_resources').declare_namespace(__name__)
