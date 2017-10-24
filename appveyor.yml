@@ -11,4 +11,4 @@ build_script:
     - 'python setup.py build'
 
 test_script:
-    - '%PYTHON_HOME%\Scripts\tox'
+    - 'python -m tox'
