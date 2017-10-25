@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=bijou-api
+set SPHINXPROJ=bijou-server
 
 if "%1" == "" goto help
 

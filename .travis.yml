@@ -1,9 +1,30 @@
 language: python
+
 python:
-    - "3.6"
+    - '3.6'
+
 install:
     - pip install -r requirements.txt
     - pip install 'coveralls==1.2.0'
+
 script:
-    - make test
+    - make clean build test
     - coveralls
+    - make docs
+
+deploy:
+    provider: pypi
+    user:
+        secure: BY0f+xUa5YbAQjo/fK5lfIm+UJCwTxsAwdr9wpJ/MurI8vc31xb7l9Y2K35Ezpdi3Pycw0dFrKpPLAx9gR2ES0NZ5G6HQ1TH/LEKJzt4B25HThZMUhDHA6uzxz8On5v7LpC3RYI4zMruBbY2NzKtrZr79jXNRq7H3AODu8Xsw0qkMu2ijGMNAkCzHgQbrnpPaTOd4KqH9HGB6BZkIgZ+c2Nu8/CZSWFYb7ttH7o9uEyUyIkvWVDeW6Af4aFP6tmSqmoriJ1+Uhdsfemr2hTCme3St7x1/1KIbBEKChTzVEnCO0KXIvVIbJ36Q5GdC0+ONxekL0smQw+gr77qg39CEWiLeWNNe585776RPbbtEVytEvI3WwQQzHzA0hJSQd/pQHzsvh13bG7sGfhmmynB8gznFdEIZ/HLESr/Zha0S5DJJPGWPrCsqsrC5+rR5H4mb5WT4oMANvAzug0IKuDQPcq0rD8u21WvO/Pm1/lh1slh3Bxnxc+tDmMddLx8UFew4gWrWqzJgRkiiLQzd+aH8dis7/zuODzlTRG+zX4sQ7g5JsaA5WKW15F2NnyOHWgfpF7c9RXr1IOU3iqbEmhkxdbMlC84O/TQAwNypVu67dcrWNfeLfW6DKFGN2bVfPWMRUG3/TnLgdCszbgD2xYtIeLymNZE9IfXb1BEYtE+sEU=
+    password:
+        secure: id26LhV3OOL95zGoAG3OepWmvuxkaNfMM3bBatVlIM5rPTUc9+Z5LzT7iyDWgOC4VAChU4OT4NVrIkpwN4Uo52uqDmTyHtRkUPzylMoxKML8eiUJpc6vdVBS1ChngIy4EKpqueermozOmCmtd2+MI6D7rCxRjIapJ8/6+/5kXui3TEMhxWFVlA3+hHor4afkjSyL5AkW2KrvxjlVlW93DvE5762G+/BZ8LTp788l8vTZJjv+3hvjNmhh0zv3GDEhbRNuK3qvFEgO+vzwPQYVD00I9S8K+Fr75b9M9xBg34Nj8UXkkOYk/UKLYMp/+sjZO7UJsT4RbtkvdY5oQudf5SacxAGsv53sepPkBruH6gUjTg6oWjL8qYoHypfn8rqvKwZQThB+O0BUpe+WB4KD9WygLzQPtZ1QS4gX+ssqdqkYgDD3o+oqkmxVrqK/b3+G4VMeVKUMsVIo2cakxoK8AG0hgMJSEc/YwmN5lurBtjfcOE5RfR/vautc7UGvK/RewcqDLcCR1HZP2wczvC70wIJEu+lOUUYG1J0ZecSONnR1hQXGrnnve3R1Vn8bAU+iGR74wvHGqP0iZQmd5odTa0HSDSHnQdcuHY2ytM8FMhTyYSeEVdb9E0CMAQpBd7+NyRCoISl5a+ad5B1nh7IKtzVHn17KMPbojEsQ7YV/ewc=
+    on:
+        tags: true
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token:
+        secure: nGRmXtV2oJOQ68rjDo3pDy24/nG6sut+HU0n+mAmZtkqsVgoAOvwIXs3RsWTtdeoHaxa3Q7+xe+zIsYAsFAZx09oKckgT5hGqS5Mn16jg0qYZGhKVLEClvpHSRu1eTqm3tfEDxaY08swpukp3qYJ8I7NjNSSRJBrnSdHBzVGSNXzQUAjYfmY1jEs26yNqsR8H9JtYcUbVFefmy45+oRceSf9mv1rDvjREPuNFOcJB81lToA5vbuw3VlDwDKKxtA5jc6ejDKodHPWWePTlydyaAiEBG4zXuKbgIFLEntl7kQblvotlFbhZc+7kxxq4TEUj+k2Iq2U2oin2IeC0lJ5Ku2PMRMzmF/vy6ofAmd27rO5pkYAfPGd9s7rIgJ3DywAibaczenbsfgirpOAJ7+i5lPbL/mpcovZ+3obWPdNV3BQc37PxjpJw9cNH3Dfp/Eh4aMBcvQax1n4xqP1tMqkq5HuTjIF+ecYqaBPEVNf3f9T5ra7UJoHeoQn3NTb73UPtgH3cjyowvuSd3FKYr82ouO543hrCSCJc2cBT/sinp0hRuVRRMG/44nhrJgIZAup2H3xHaWR4RKElpQ57UKTBoLSAj9Ffa3eYSXfssRNb5ov2uuJ3gb0uZptfyQzZn6X4MadvxpWUokwpWdy8vvf97BElYPpu7jiECs/TYGmmqw=
+    on:
+        branch: master
