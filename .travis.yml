@@ -24,6 +24,7 @@ deploy:
 deploy:
     provider: pages
     skip_cleanup: true
+    local_dir: docs/_build/html
     github_token:
         secure: nGRmXtV2oJOQ68rjDo3pDy24/nG6sut+HU0n+mAmZtkqsVgoAOvwIXs3RsWTtdeoHaxa3Q7+xe+zIsYAsFAZx09oKckgT5hGqS5Mn16jg0qYZGhKVLEClvpHSRu1eTqm3tfEDxaY08swpukp3qYJ8I7NjNSSRJBrnSdHBzVGSNXzQUAjYfmY1jEs26yNqsR8H9JtYcUbVFefmy45+oRceSf9mv1rDvjREPuNFOcJB81lToA5vbuw3VlDwDKKxtA5jc6ejDKodHPWWePTlydyaAiEBG4zXuKbgIFLEntl7kQblvotlFbhZc+7kxxq4TEUj+k2Iq2U2oin2IeC0lJ5Ku2PMRMzmF/vy6ofAmd27rO5pkYAfPGd9s7rIgJ3DywAibaczenbsfgirpOAJ7+i5lPbL/mpcovZ+3obWPdNV3BQc37PxjpJw9cNH3Dfp/Eh4aMBcvQax1n4xqP1tMqkq5HuTjIF+ecYqaBPEVNf3f9T5ra7UJoHeoQn3NTb73UPtgH3cjyowvuSd3FKYr82ouO543hrCSCJc2cBT/sinp0hRuVRRMG/44nhrJgIZAup2H3xHaWR4RKElpQ57UKTBoLSAj9Ffa3eYSXfssRNb5ov2uuJ3gb0uZptfyQzZn6X4MadvxpWUokwpWdy8vvf97BElYPpu7jiECs/TYGmmqw=
     on:
