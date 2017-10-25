@@ -7,8 +7,10 @@ with open('requirements.txt') as f:
 setup(
     name='bijou',
     version='0.0.1',
-    install_requires=requirements,
     packages=find_packages(exclude=['docs', 'tests']),
+    url='https://github.com/bijou/bijou-server',
+    download_url='https://github.com/bijou/bijou-server/archive/0.0.1.tar.gz',
+    install_requires=requirements,
     namespace_packages=['bijou'],
     entry_points={
         'console_scripts': [
@@ -16,3 +18,4 @@ setup(
         ]
     }
 )
+

@@ -2,9 +2,11 @@
 #
 
 # You can set these variables from the command line.
+# TODO: -b coverage needs to be done as well however
+# it overwrites the html directory
 SPHINXOPTS    =
 SPHINXBUILD   = python -msphinx
-SPHINXPROJ    = bijou-api
+SPHINXPROJ    = bijou-server
 SOURCEDIR     = .
 BUILDDIR      = _build
 

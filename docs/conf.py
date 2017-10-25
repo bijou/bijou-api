@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# bijou-api documentation build configuration file, created by
+# bijou-server documentation build configuration file, created by
 # sphinx-quickstart on Fri Oct 13 15:24:20 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -24,6 +24,7 @@ import os
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
+import sphinx_rtd_theme
 
 # -- General configuration ------------------------------------------------
 
@@ -34,14 +35,19 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autodoc',
+extensions = [
+    'm2r',
+    'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     'sphinx.ext.doctest',
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages']
+    'sphinx.ext.githubpages',
+    'sphinx.ext.coverage'
+]
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -49,14 +55,13 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
 # The master toctree document.
 master_doc = 'index'
 
 # General information about the project.
-project = 'bijou-api'
+project = 'bijou-server'
 copyright = '2017, murt'
 author = 'murt'
 
@@ -93,7 +98,8 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -111,21 +117,11 @@ html_static_path = ['_static']
 #
 # This is required for the alabaster theme
 # refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
-html_sidebars = {
-    '**': [
-        'about.html',
-        'navigation.html',
-        'relations.html',  # needs 'show_related': True theme option to display
-        'searchbox.html',
-        'donate.html',
-    ]
-}
-
 
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'bijou-apidoc'
+htmlhelp_basename = 'bijou-serverdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -152,7 +148,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'bijou-api.tex', 'bijou-api Documentation',
+    (master_doc, 'bijou-server.tex', 'bijou-server Documentation',
      'murt', 'manual'),
 ]
 
@@ -162,7 +158,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'bijou-api', 'bijou-api Documentation',
+    (master_doc, 'bijou-server', 'bijou-server Documentation',
      [author], 1)
 ]
 
@@ -173,8 +169,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'bijou-api', 'bijou-api Documentation',
-     author, 'bijou-api', 'One line description of project.',
+    (master_doc, 'bijou-server', 'bijou-server Documentation',
+     author, 'bijou-server', 'One line description of project.',
      'Miscellaneous'),
 ]
 
