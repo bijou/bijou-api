@@ -13,6 +13,7 @@ from . import errors
 # Create a logger for this script
 logger = logging.getLogger(__name__)
 
+
 def read_config(config_file: str) -> yaml.YAMLObject:
     """
     Read and parse a bijou configuration file
