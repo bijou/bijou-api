@@ -23,13 +23,16 @@ checks:
 
 ratings:
     paths:
-        - "**.py"
-        - "**.md"
+        - '**.py'
+        - '**.md'
 
 exclude_paths:
-    - "tox.ini"
-    - "requirements.txt"
-    - "Makefile"
-    - "LICENSE"
-    - "docs/"
-    - "bijou/**/tests/**/*"
+    - 'tox.ini'
+    - 'requirements.txt'
+    - 'Makefile'
+    - 'LICENSE'
+    - 'docs/'
+    - 'bijou/**/tests/**/*'
+    - 'deploy_key*'
+    - 'setup.cfg'
+    - 'appveyor.yml'

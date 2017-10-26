@@ -4,6 +4,7 @@ class RepoDesc:
     def __init__(self):
         pass
 
+
 class SCM:
     """Repository manager for plugins
 
