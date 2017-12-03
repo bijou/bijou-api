@@ -1,5 +1,5 @@
 tox==2.9.1
-sphinx_rtd_theme==0.2.5b1
+sphinx-rtd-theme==0.2.5b2
 m2r==0.1.12
 aiohttp==2.3.5
 graphene>=2.0dev
