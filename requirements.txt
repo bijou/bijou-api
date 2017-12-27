@@ -6,7 +6,7 @@ graphene>=2.0dev
 PyYAML==3.12
 Sphinx==1.6.5
 Yapsy==1.11.223
-SqlAlchemy==1.2.0b3
+SqlAlchemy==1.2.0
 pydash==4.3.1
 coloredlogs==7.3.1
 schema==0.6.6
