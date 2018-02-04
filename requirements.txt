@@ -4,7 +4,7 @@ m2r==0.1.12
 aiohttp==2.3.10
 graphene>=2.0dev
 PyYAML==3.12
-Sphinx==1.6.6
+Sphinx==1.6.7
 Yapsy==1.11.223
 SqlAlchemy==1.2.2
 pydash==4.3.1
