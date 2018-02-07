@@ -9,10 +9,10 @@ from pydash import _
 from schema import Schema, SchemaError, And, Use, Optional
 
 from . import errors
+from .db import init_db
 
 # Create a logger for this script
 logger = logging.getLogger(__name__)
-
 
 def read_config(config_file: str) -> yaml.YAMLObject:
     """
@@ -120,6 +120,10 @@ def main():
     # Debug out for the arguments and configuration
     logger.debug(args)
     logger.debug(config)
+
+    # Initialise the database
+    init_db(config.get('db').get('url'))
+
 
 # If run as script also execute main function
 if __name__ == "__main__":
