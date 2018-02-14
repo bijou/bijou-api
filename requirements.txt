@@ -1,6 +1,6 @@
 tox==2.9.1
 sphinx-rtd-theme==0.2.5b2
-m2r==0.1.12
+m2r==0.1.13
 aiohttp==3.0.1
 graphene>=2.0dev
 graphene-sqlalchemy==2.0.0
