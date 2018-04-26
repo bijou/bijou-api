@@ -9,6 +9,6 @@ Sphinx==1.7.4
 Yapsy==1.11.223
 SqlAlchemy==1.2.7
 pydash==4.5.0
-coloredlogs==9.0
+coloredlogs==9.1
 schema==0.6.7
 guessit==2.1.4
