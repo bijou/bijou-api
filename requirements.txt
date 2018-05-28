@@ -5,9 +5,9 @@ aiohttp==3.2.1
 graphene>=2.0dev
 graphene-sqlalchemy==2.0.0
 PyYAML==3.12
-Sphinx==1.7.4
+Sphinx==1.7.5
 Yapsy==1.11.223
-SqlAlchemy==1.2.7
+SqlAlchemy==1.2.8
 pydash==4.5.0
 coloredlogs==10.0
 schema==0.6.7
