@@ -1,4 +1,4 @@
-tox==3.1.1
+tox==3.1.2
 sphinx-rtd-theme==0.4.0
 m2r==0.1.15
 aiohttp==3.3.2
