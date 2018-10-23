@@ -11,4 +11,4 @@ SqlAlchemy==1.2.12
 pydash==4.7.3
 coloredlogs==10.0
 schema==0.6.8
-guessit==3.0.2
+guessit==3.0.3
