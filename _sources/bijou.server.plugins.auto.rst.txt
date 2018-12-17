@@ -1,0 +1,45 @@
+bijou.server.plugins package
+============================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    bijou.server.plugins.utils
+
+Submodules
+----------
+
+bijou.server.plugins.downloader module
+--------------------------------------
+
+.. automodule:: bijou.server.plugins.downloader
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bijou.server.plugins.importer module
+------------------------------------
+
+.. automodule:: bijou.server.plugins.importer
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bijou.server.plugins.indexer module
+-----------------------------------
+
+.. automodule:: bijou.server.plugins.indexer
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bijou.server.plugins
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,17 @@
+bijou.server.db package
+=======================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    bijou.server.db.models
+
+Module contents
+---------------
+
+.. automodule:: bijou.server.db
+    :members:
+    :undoc-members:
+    :show-inheritance:

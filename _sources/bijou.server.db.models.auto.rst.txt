@@ -1,0 +1,54 @@
+bijou.server.db.models package
+==============================
+
+Submodules
+----------
+
+bijou.server.db.models.base module
+----------------------------------
+
+.. automodule:: bijou.server.db.models.base
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bijou.server.db.models.media\_file module
+-----------------------------------------
+
+.. automodule:: bijou.server.db.models.media_file
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bijou.server.db.models.media\_tv\_episode module
+------------------------------------------------
+
+.. automodule:: bijou.server.db.models.media_tv_episode
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bijou.server.db.models.media\_tv\_season module
+-----------------------------------------------
+
+.. automodule:: bijou.server.db.models.media_tv_season
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bijou.server.db.models.media\_tv\_show module
+---------------------------------------------
+
+.. automodule:: bijou.server.db.models.media_tv_show
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bijou.server.db.models
+    :members:
+    :undoc-members:
+    :show-inheritance:

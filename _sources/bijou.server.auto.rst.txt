@@ -1,0 +1,21 @@
+bijou.server package
+====================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    bijou.server.db
+    bijou.server.errors
+    bijou.server.net
+    bijou.server.plugins
+    bijou.server.types
+
+Module contents
+---------------
+
+.. automodule:: bijou.server
+    :members:
+    :undoc-members:
+    :show-inheritance:

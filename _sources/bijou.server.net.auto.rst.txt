@@ -1,0 +1,22 @@
+bijou.server.net package
+========================
+
+Submodules
+----------
+
+bijou.server.net.server module
+------------------------------
+
+.. automodule:: bijou.server.net.server
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bijou.server.net
+    :members:
+    :undoc-members:
+    :show-inheritance:

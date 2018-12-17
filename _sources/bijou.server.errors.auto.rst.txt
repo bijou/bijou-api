@@ -1,0 +1,22 @@
+bijou.server.errors package
+===========================
+
+Submodules
+----------
+
+bijou.server.errors.config\_file\_not\_found module
+---------------------------------------------------
+
+.. automodule:: bijou.server.errors.config_file_not_found
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bijou.server.errors
+    :members:
+    :undoc-members:
+    :show-inheritance:

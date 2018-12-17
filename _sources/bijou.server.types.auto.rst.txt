@@ -1,0 +1,22 @@
+bijou.server.types package
+==========================
+
+Submodules
+----------
+
+bijou.server.types.media\_base module
+-------------------------------------
+
+.. automodule:: bijou.server.types.media_base
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bijou.server.types
+    :members:
+    :undoc-members:
+    :show-inheritance:

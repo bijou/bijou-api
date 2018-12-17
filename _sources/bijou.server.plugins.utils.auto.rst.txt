@@ -1,0 +1,22 @@
+bijou.server.plugins.utils package
+==================================
+
+Submodules
+----------
+
+bijou.server.plugins.utils.scm module
+-------------------------------------
+
+.. automodule:: bijou.server.plugins.utils.scm
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bijou.server.plugins.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
