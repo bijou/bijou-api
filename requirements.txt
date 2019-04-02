@@ -1,9 +1,9 @@
-tox==3.8.3
+tox==3.8.4
 sphinx-rtd-theme==0.4.3
 m2r==0.2.1
 aiohttp==3.5.4
 graphene>=2.0dev
-graphene-sqlalchemy==2.1.0
+graphene-sqlalchemy==2.1.1
 PyYAML==5.1
 Sphinx==2.0.0
 Yapsy==1.12.0
