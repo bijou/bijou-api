@@ -1,7 +1,7 @@
 tox==3.20.1
 sphinx-rtd-theme==0.5.0
 m2r==0.2.1
-aiohttp==3.7.2
+aiohttp==3.7.3
 graphene>=2.0dev
 graphene-sqlalchemy==2.3.0
 PyYAML==5.3.1
