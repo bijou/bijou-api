@@ -5,7 +5,7 @@ aiohttp==3.7.4.post0
 graphene>=2.0dev
 graphene-sqlalchemy==2.3.0
 PyYAML==5.4.1
-Sphinx==4.0.1
+Sphinx==4.0.2
 Yapsy==1.12.2
 SqlAlchemy==1.4.15
 pydash==5.0.0
